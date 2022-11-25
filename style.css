@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(215, 231, 252);
+    width: 100%;
+    display: inline-block;
+    margin-left: 200px;
+    margin-right: 250px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.profilePicture {
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: 250;
+    border-radius: 25px;
+    position: relative;
+    user-select: none;
+    box-shadow: 0 10px 30px darkslateblue;
+    transition: box-shadow 500ms, transform 1s;
+}
+
+.profilePicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profilePicture__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.profilePicture__Find-me-on-LinkedIn {
+    position: absolute;
+    font-weight: bold;
+    position: bold;
+    bottom: 12px;
+    left: 6px;
+    width: 125px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 30%;
+    cursor: pointer;
+    font-size: 18x;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    top: 100;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: whitesmoke;
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    transform: translateX(0px);
+    transition: transform 1s;
+    transition: transform 600ms 50ms, opacity 250ms;
+}
+
+.profilePicture:hover {
+    box-shadow: 0 30px 90px rgb(0 0 0 / 50%);
+    transform: scale(1.1);
+}
+
+.profilePicture__Find-me-on-LinkedIn:hover {
+    transform: translateX(15px);
+}
+
+.generalInfo {
+    display: inline-block;
+    color: darkslategrey;
+    padding-left: 25px;
+}
+
+.workExperience {
+    color: darkslategrey;
+}
+
+.education {
+    color: darkslategrey;
+}
